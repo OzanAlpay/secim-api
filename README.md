@@ -11,3 +11,7 @@ API Endpoints are
 
 It is a WIP progress application, and main intention is learning how to code an express application, so you may see
 some bad practices in the code. Please inform me about this issues via e-mail or raising an issue in Github
+
+#### Live Demo:    
+https://thawing-crag-38359.herokuapp.com/electionresults/
+Note: Since applications runs on heroku free-tier and uses mongo-db atlas for data storage, don't expect so much performance.
