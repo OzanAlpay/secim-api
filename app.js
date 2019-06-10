@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var helmet = require('helmet');
 
 var indexRouter = require('./routes/index')
 var electionRouter = require('./routes/electionresults')
@@ -14,6 +14,7 @@ var mongoDB = 'mongodb+srv://Reader:reader123@cluster0-ixoat.mongodb.net/test?re
 mongoose.connect(mongoDB, { useNewUrlParser: true, dbName: "Elections" })
 var db = mongoose.connection
 db.on('error', console.error.bind(console, 'MongoDB Connection Problem'))
+app.use(helmet())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
