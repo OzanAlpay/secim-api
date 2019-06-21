@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "debug": "DEBUG=secim-api:* npm run devstart"
+    "debug": "DEBUG=secim-api:* npm run devstart",
+    "test": "mocha --timeout 10000 --exit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -20,7 +21,10 @@
     "morgan": "~1.9.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
     "nodemon": "^1.19.1"
   }
 }
