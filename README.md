@@ -1,5 +1,7 @@
 ### Turkish 2019 Local Election Results API 
 
+[![Build Status](https://travis-ci.org/OzanAlpay/secim-api.svg?branch=master)](https://travis-ci.org/OzanAlpay/secim-api)
+
 Currently this api offers only very basic capabilities, such as:
 * You can get all election results
 * You can get a specific city result
